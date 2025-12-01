@@ -116,11 +116,6 @@ Communication & Channel Utilization
 
 **_**
 
-<img width="991" height="539" alt="image (9)" src="https://github.com/user-attachments/assets/72a1eb95-9440-4f9d-9877-b34f6947dc6f" />
-
-
-**_**
-
 <img width="991" height="539" alt="image (9)" src="https://github.com/user-attachments/assets/edae11f1-259e-4573-8329-1ff992c46333" />
 
 
