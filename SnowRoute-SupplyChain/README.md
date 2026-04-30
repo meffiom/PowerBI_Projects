@@ -1,6 +1,3 @@
-# SnowRoute-Supply-Chain
-End-to-end Snowflake supply chain platform — Medallion architecture, Streams, Tasks, Snowpark Python, Power BI
-
 # SnowRoute — Supply Chain Intelligence Platform
 
 > End-to-end Snowflake data platform for supply chain analytics.
@@ -15,15 +12,7 @@ I built this project to take a raw 180,000-row supply chain
 CSV file and turn it into something a business stakeholder 
 can sit in front of and make decisions from. The platform 
 covers the full stack — from raw ingestion through to a 
-four-page Power BI dashboard — using Snowflake-native tools 
-throughout.
-
-| Property | Detail |
-|----------|--------|
-| **Dataset** | DataCo Smart Supply Chain — 180,519 rows (Kaggle) |
-| **Platform** | Snowflake Enterprise (AWS us-east-1) |
-| **Dashboard** | Power BI Desktop — 4 pages |
-| **Architecture** | Medallion — Bronze → Silver → Gold |
+four-page Power BI dashboard.
 
 ---
 
@@ -49,27 +38,6 @@ orders. Not a single First Class shipment arrived on time.
 account for $19.6M in revenue — more than On Time orders 
 at $15.8M. The business is processing more high-value 
 orders through the delayed channel than the on-time channel.
-
----
-
-
-## Tech Stack
-
-| Layer | Tool | Purpose |
-|-------|------|---------|
-| Cloud warehouse | Snowflake Enterprise | All storage, compute, orchestration |
-| Ingestion | COPY INTO + Internal Stage | Bulk load 180k rows |
-| Transformation | Snowflake SQL | Type casting, enrichment, star schema |
-| CDC | Snowflake Streams | Detects new inserts automatically |
-| Orchestration | Snowflake Tasks | Fires pipeline when stream has data |
-| Data recovery | Time Travel | Rows restored using AT TIMESTAMP |
-| Advanced analytics | Snowpark Python | Risk scoring inside Snowflake |
-| Python UDF | Snowpark UDF | classify_delay_severity() from SQL |
-| Auto-refresh | Dynamic Tables | Self-managing 1-hour target lag |
-| Performance | Materialized View | Pre-computes shipping aggregation |
-| Access control | RBAC | BI_READER isolated to ANALYTICS_DB |
-| Dashboard | Power BI Desktop | 4 pages · 10 DAX measures |
-
 
 ---
 
