@@ -8,6 +8,7 @@ Each project includes a `.pbix` file that can be opened directly in Power BI Des
 - **Supply Chain Operations Dashboard**
 - **Migration Tracker Dashboard**
 - **Medicare Claims & Eligibility Dashboard**
+- **SnowRoute-SupplyChain**
 
 ## Tools Used
 - **Power BI Desktop**
